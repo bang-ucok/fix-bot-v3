@@ -13,7 +13,7 @@ let str = `${global.wm}
 │ • *Dana:* [${087878823108.pdana}]
 │ • *Gopay:* [${087878823108.pgopay}]
 │ • *Ovo:* [${087878823108.povo}]
-│ • *Paypal:* [${'rampagestore112@gmail.com'.plinkaja}]
+│ • *Paypal:* [${'rampagestore112@gmail.com'}]
 ❏────`
 let wibu = `https://i.ibb.co/n8YcnVX/IMG-20221004-WA0012.jpg` 
 let thumb = await(await fetch(wibu)).buffer()
