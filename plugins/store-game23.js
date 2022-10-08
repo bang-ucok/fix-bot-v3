@@ -1,23 +1,29 @@
 let handler = async (m, { conn }) => {
           //-----PRICE
-let ff1 = 'DANA'
-let ff2 = 'OVO'
-let ff3 = 'QRIS'
-let info = `
+let ff1 = 'BCA'
+let ff2 = 'DANA'
+let ff3 = 'OVO'
+let ff4 = 'SHOPEEPAY'
+let ff5 = 'QRIS'
+let info = 
          ✨PAYMENT✨
-*💦DANA : 085212649276*  ${ff1}
-*💦OVO  : 081386943282*  ${ff2}
-*💦QRIS : (TANYA ADMIN)* ${ff3}
+*BCA  : 5475457975*    ${ff1}
+*DANA : 087878823108*  ${ff2}
+*OVO  : 087878823108*  ${ff3}
+*SHOPEEPAY : 087878823108*  ${ff4}
+*QRIS : (TANYA ADMIN)* ${ff5}
 
-    *👑KABUL STORE || READY👑* `
+    *👑 IZDIHAAR STORE 👑* `
 const sections = [
        {
    	title: `${htjava} list payment ✦-------`,
-     rows: [    
-     {title: "payment dana", rowId: '.order *Top Up:* payment dana • DANA', description: 'PRICE: ' + ff1 + ', payment dana' },
-     {title: "payment ovo", rowId: '.order *Top Up:* payment ovo •  OVO', description: 'PRICE: ' + ff2 + ', payment ovo' },
-     {title: "payment qris", rowId: '.order *Top Up:* payment qris • QRIS', description: 'PRICE: ' + ff3 + ', paymet qris' },
-         ]
+     rows: [  
+     {title: "payment BCA", rowId: '.order *Top Up:* payment bca • BCA', description: 'PRICE: ' + ff1 + ', payment bca' },
+     {title: "payment dana", rowId: '.order *Top Up:* payment dana • DANA', description: 'PRICE: ' + ff2 + ', payment dana' }
+     {title: "payment OVO", rowId: '.order *Top Up:* payment ovo • OVO', description: 'PRICE: ' + ff3 + ', payment ovo' }
+     {title: "payment shopeepay", rowId: '.order *Top Up:* payment shopeepay • SHOPEERPAY', description: 'PRICE: ' + ff4 + ', payment shopeepay' },
+     {title: "payment qris", rowId: '.order *Top Up:* payment qris •  QRIS', description: 'PRICE: ' + ff5 + ', payment qris' },
+       ]
    },
 ]        
 const listMessage = {
