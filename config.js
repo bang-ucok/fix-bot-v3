@@ -51,26 +51,26 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 
 global.sig = 'https://instagram.com/_ctzhid' // ig
 global.sgh = 'https://github.com/WH-MODS-BOT/' // github
-global.sgc = 'https://chat.whatsapp.com/FQkbyTEfvES3D363uxMEFOI' // group whatsapp
+global.sgc = 'https://chat.whatsapp.com/I3MsNCSMNKfFA945aDxwx0' // group whatsapp
 global.sdc = 'https://www.discord.com'//discord
-global.snh = 'https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow' // my youtube channel
-global.sfb = 'https://www.facebook.com/' // facebook
+global.snh = 'https://www.youtube.com/channel/' // my youtube channel
+global.sfb = 'https://www.facebook.com/mahroja.amsterdam' // facebook
 global.syt = 'https://www.youtube.com/' // my youtube channel "kalau ada yt ke 2 tarok link nya disini"
 
 /*============== PAYMENT ==============*/
-global.pdana = '085212649276' //dana
-global.povo = '081386943282' //ovo
-global.pgopay = '085212649276' //gopay
-global.plinkaja = '085212649276' //link aja
-global.ppulsa = '085212649276' //telkomsel
-global.ppulsa2 = '085212649276' // kalau ada kartu lain isi aja
-global.psaweria = 'https://saweria.com/mrw4h1d'
+global.pdana = '087878823108' //dana
+global.povo = '087878823108' //ovo
+global.pgopay = '087878823108' //gopay
+global.plinkaja = '087878823108' //link aja
+global.ppulsa = '087878823108' //telkomsel
+global.ppulsa2 = '081293408206' // kalau ada kartu lain isi aja
+global.psaweria = 'https://saweria.com/'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '082112051088'
 global.nomorown = '087878823108'
 global.namebot = 'AL BOT WHATSAPP'
-global.nameown = 'KABUL STORE || READY'
+global.nameown = 'IZDIHAAR STORE'
 
 /*============== Github Thanks To ==============*/
 global.namagithub = 'Nama Github Belum Diisi' // nama github lu
@@ -85,7 +85,7 @@ global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['087878823108', 'KABUL STORE || READY', true],
+  ['087878823108', 'IZDIHAAR STORE || READY', true],
   ['-', 'ISI KALAU ADA', true],
   ['-', 'ISI KALAU ADA', true],
   ['-', 'ISI KALAU ADA', true],
@@ -139,7 +139,7 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 global.wm = '                「 AL BOT Whatsapp 」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘KABUL˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘IZDIHAAR˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
 global.wm3 = '⫹⫺ AL BOT Whatsapp '
 global.botdate = `⌚: ${wktuwib}\n📆: ${week} ${date}`
 global.bottime = `T I M E : ${wktuwib}`
