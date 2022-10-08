@@ -26,7 +26,7 @@ let rules = `➯ *Kabul Store || Ready*
 └─┈⟅`
 let nth = `☰⟥⟝⟞⟝❨ *PERATURAN GROUP* ❩⟞⟝⟞⟤☰`
 conn.send3ButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, rules, 'LIST', '.list', 'STORE', '.store', 'LISTSTORE', '.liststore', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'wa.me/6281386943282',
+    mediaUrl: 'wa.me/6287878823108',
     mediaType: 2, 
     description: sgc,
     title: "Sᴇᴡᴀ Cᴇᴋ Dɪsɪɴɪ Cᴜʏ!!!",
