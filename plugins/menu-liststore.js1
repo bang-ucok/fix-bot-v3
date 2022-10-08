@@ -1,0 +1,107 @@
+let handler = async (m, { conn, usedPrefix, command }) => {
+
+	let msgs = db.data.msgs	let msg = (Object.entries(msgs).map(([nama, isi]) => { return { nama, ...isi } })).map(v => v.nama)
+
+	let row = Object.keys(msg).map(v => ({
+
+		title: msg[v],
+
+		description: '',
+
+		rowId: msg[v]
+
+	}))
+
+	let button = {
+
+		buttonText: 'LIST STORE',
+
+		description: 'Berikut daftar Menu yg Ada di List store...',
+
+		footerText: wm
+
+	}
+
+	if (msg[0]) return await conn.sendListM(m.chat, button, row, m)
+
+	else throw `\nbelum ada Menu yg Ada di list store.\nketik *${usedPrefix + command} <teks>* untuk menambahkan daftar menu.\n`
+
+}
+
+handler.help = ['list']
+
+handler.tags = ['store']
+
+handler.command = /^(list|bismilah bisa)$/i
+
+export default handler
+
+/**
+
+ * Jangan di hapus
+
+ *
+
+ * Buatan FokusDotId (Fokus ID)
+
+ * https://github.com/fokusdotid
+
+ *
+ 
+ const { proto } = (await import('@adiwajshing/baileys')).default
+
+let handler = async (m, { conn, text, command, usedPrefix }) => {
+
+	let M = proto.WebMessageInfo;
+
+	if (!m.quoted) throw `balas pesan dengan perintah *${usedPrefix + command}*`;
+
+	if (!text) throw `penggunaan: ${usedPrefix + command} <teks>\n\ncontoh:\n${usedPrefix + command} DM FF`;
+
+	let msgs = db.data.msgs
+
+	if (text in msgs) throw `'${text}' telah Terdaftar di Data List`
+
+	msgs[text] = M.fromObject(await m.getQuotedObj()).toJSON()
+
+	m.reply(`berhasil menambahkan ${text} ke List\n\nakses dengan mengetik namanya`.trim())
+
+}
+
+handler.help = ['list'].map(v => 'add' + v + ' <teks>')
+
+handler.tags = ['store']
+
+handler.command = /^(addlist)$/i
+
+handler.premium = true
+
+handler.owner = true
+
+export default handler
+
+ */
+
+let handler = async (m, { text, usedPrefix, command }) => {
+
+	if (!text) throw `gunakan *${usedPrefix}liststore* untuk melihat daftar pesan yg tersimpan.`	let msgs = db.data.msgs
+
+	if (!(text in msgs)) throw `'${text}' tidak terdaftar di daftar pesan.`
+
+	delete msgs[text]
+
+	m.reply(`\n  [ðŸ’¬] berhasil menghapus pesan di daftar List dengan nama '${text}'.\n`)
+
+}
+
+handler.help = ['list'].map(v => 'del' + v + ' <teks>')
+
+handler.tags = ['albotwhatsapp']
+
+handler.command = /^(dellist)$/i
+
+handler.group = true
+
+handler.admin = true
+
+export default handler
